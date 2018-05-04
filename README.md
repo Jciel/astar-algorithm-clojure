@@ -4,7 +4,7 @@ Implementation of search algorithm A* to present as work in AI discipline of com
 
 ## Usage
 
-First you must have Clojure and Leiningen installed [Clojure](https://clojure.org/guides/getting_started)
+First you must have Clojure and Leiningen installed [Clojure](https://clojure.org/guides/getting_started) and
 [Leiningen](https://leiningen.org/#install), after entering the project directory and running in your terminal.
 
 ```bash

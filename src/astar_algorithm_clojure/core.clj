@@ -61,8 +61,9 @@
        (println path)
        (println current-cost))
      (if (not (empty? (state graph)))
-       (let [costs (get-costs state current-cost) next-state (get-next-state state costs)]
-         (search-A* next-state (get-real-cost current-cost state next-state) (conj path state)))))))
+       (let [costs (get-costs state current-cost)
+             next-state (get-next-state state costs)]
+         (recur next-state (get-real-cost current-cost state next-state) (conj path state)))))))
 
 ;(defn search-A*
 ;  ([state] (search-A* state 0))
